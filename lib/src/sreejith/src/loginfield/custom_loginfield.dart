@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nexteon_group_packages/nexteon_group_packages.dart';
 import 'package:nexteon_group_packages/src/sajin/core/const/my_text_style.dart';
 import 'package:nexteon_group_packages/src/sajin/text/custom_text.dart';
 import 'package:nexteon_group_packages/src/sreejith/src/textformfield/custom_textfield.dart';
@@ -35,7 +36,7 @@ class CustomLoginTextField extends StatelessWidget {
         CustomText(
           text: text,
           style: TextStyle(
-                  color: color ?? Theme.of(context).colorScheme.tertiary,
+                  color: color ?? MyColors.black,
                   fontSize: fontSize ?? MyTextSTyles.greyButtonText.fontSize,
                   fontWeight:
                       fontWeight ?? MyTextSTyles.greyButtonText.fontWeight)
@@ -53,7 +54,7 @@ class CustomLoginTextField extends StatelessWidget {
           controller: controller,
           hintText: hintText,
           hintStyle: TextStyle(
-              color: hintcolor ?? Theme.of(context).colorScheme.onSecondary),
+              color: hintcolor ?? MyColors.grey),
         )
       ],
     );

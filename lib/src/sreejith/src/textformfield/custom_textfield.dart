@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nexteon_group_packages/src/sajin/core/const/my_colors.dart';
 import 'package:nexteon_group_packages/src/sajin/core/const/my_text_style.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -94,7 +95,7 @@ class CustomTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: TextStyle(
-                color: hintcolor ?? Theme.of(context).colorScheme.onSecondary,
+                color: hintcolor ?? MyColors.grey,
                 fontSize: fontSize ?? MyTextSTyles.whiteButtonText.fontSize,
                 fontWeight:
                     fontWeight ?? MyTextSTyles.whiteButtonText.fontWeight)
