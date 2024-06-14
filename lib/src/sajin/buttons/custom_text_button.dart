@@ -34,7 +34,7 @@ class CustomTextButton extends StatelessWidget {
       onPressed: onPressed,
       style: buttonStyle,
       child: CustomPaint(
-        painter: underline ? TextUnderlinePainter(textColor, underlineThickness, underlineGap) : null,
+        painter: underline ? TextUnderlinePainter(textColor ?? MyTextSTyles.blueButtonText.color , underlineThickness, underlineGap) : null,
         
         child: CustomText(
           text: buttonText??null,
